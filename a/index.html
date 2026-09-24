@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRITICAL WARNING - SYSTEM BREACH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Qizil miltillovchi xavf foni -->
+    <div id="alarmOverlay"></div>
+
+    <!-- Bosh ekrandagi xazil tugmasi -->
+    <div id="startScreen">
+        <button id="startBtn">⚠️ Maxfiy Faylni Ochish</button>
+    </div>
+
+    <!-- Qo'rqituvchi Hakkerlik Oynasi -->
+    <div class="hacked-box hidden" id="hackedBox">
+        <div class="skull-icon">☠️</div>
+        <h1>TIZIMINGIZ BUZIB KIRILDI!</h1>
+        <p class="warning-text">Barcha shaxsiy fayllaringiz, parollaringiz va galereyangiz yuklab olindi.</p>
+        
+        <div class="timer-box">
+            <p>FAYLLAR O'CHIRILISHIGA QOLGAN VAQT:</p>
+            <div id="countdown">00:30</div>
+        </div>
+
+        <div class="console-logs" id="logs">
+            <p>> IP Manzil aniqlandi: 192.168.1.105...</p>
+            <p>> Kamera ishga tushirildi...</p>
+            <p>> Galereya ma'lumotlari nusxalanmoqda...</p>
+        </div>
+
+        <!-- Barcha xazil ekanligini ochib beruvchi tugma -->
+        <button id="revealBtn">Xavotirni to'xtatish (Bosing)</button>
+    </div>
+
+    <!-- Ovoz effektlari -->
+    <audio id="sirenSound" src="https://assets.mixkit.co/active_storage/sfx/995/995-preview.mp3" loop></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
